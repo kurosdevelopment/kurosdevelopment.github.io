@@ -1,18 +1,5 @@
-# kurosdevelopment.github.io
+# Kuros Development website
 
-Official Kuros Development website.
+Ready for GitHub Pages at `https://kurosdevelopment.github.io`.
 
-## Publish on GitHub Pages
-
-1. Create the public repository `kurosdevelopment.github.io`.
-2. Upload the contents of this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`.
-6. Save.
-
-The site will be available at:
-
-`https://kurosdevelopment.github.io`
-
-Before publishing, replace the Discord contact link with your actual server invite once the server exists.
+Upload `index.html`, `style.css`, `script.js`, and `404.html` directly to the root of the repository.

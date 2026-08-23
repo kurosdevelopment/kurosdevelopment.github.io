@@ -3,174 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kuros Development builds custom Discord bots for FiveM, Minecraft and gaming communities.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Kuros Development builds custom Discord bots and automation for FiveM, Minecraft and gaming communities.">
+  <meta property="og:title" content="Kuros Development — Custom Discord Bots">
+  <meta property="og:description" content="Custom Discord systems built around your community.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kurosdevelopment.github.io/">
   <title>Kuros Development — Custom Discord Bots</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav-wrap">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="#top"><span class="brand-mark">K</span>Kuros Development</a>
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <div id="navLinks" class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a class="button small" href="#contact">Get a Quote</a>
+      <a class="brand" href="#top"><span class="brand-mark">K</span><span>Kuros Development</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#faq">FAQ</a>
+        <a class="nav-cta" href="https://discord.gg/4mwm48HGT" target="_blank" rel="noopener noreferrer">Get a Quote</a>
       </div>
     </nav>
   </header>
-
   <main id="top">
-    <section class="hero container">
+    <section class="hero container reveal">
       <div class="hero-copy">
-        <div class="eyebrow">CUSTOM DISCORD DEVELOPMENT</div>
-        <h1>Automation built around <span>your community.</span></h1>
-        <p>
-          Custom Discord bots for FiveM, Minecraft and gaming communities.
-          From staff workflows and ticket systems to databases, applications and full server management.
-        </p>
-        <div class="hero-actions">
-          <a class="button" href="#projects">View Projects</a>
-          <a class="button secondary" href="#contact">Request a Quote</a>
-        </div>
-        <div class="hero-points">
-          <span>✓ Custom development</span>
-          <span>✓ Clean project structure</span>
-          <span>✓ Maintenance available</span>
-        </div>
+        <div class="pill"><span class="status-dot"></span> Commissions open</div>
+        <p class="eyebrow">CUSTOM DISCORD DEVELOPMENT</p>
+        <h1>Systems built around <span>your community.</span></h1>
+        <p class="hero-text">Custom Discord bots, automation and server-specific workflows for FiveM, Minecraft and gaming communities — designed around the way your staff and members actually work.</p>
+        <div class="hero-actions"><a class="button primary" href="https://discord.gg/4mwm48HGT" target="_blank" rel="noopener noreferrer">Request a Quote</a><a class="button secondary" href="#projects">View Projects</a></div>
+        <div class="trust-row"><span>✓ Custom-built</span><span>✓ Source delivery available</span><span>✓ Maintenance plans</span></div>
       </div>
       <div class="terminal-card">
-        <div class="terminal-top"><span></span><span></span><span></span></div>
-        <pre><code><b>KUROS DEVELOPMENT</b>
+        <div class="terminal-head"><div class="terminal-dots"><span></span><span></span><span></span></div><span>kuros@development</span></div>
+        <pre><code><span class="purple">$</span> project init
 
-&gt; project.init()
-  ✓ Requirements
-  ✓ Architecture
-  ✓ Development
-  ✓ Testing
-  ✓ Delivery
+<span class="muted">[01]</span> Requirements      <span class="green">complete</span>
+<span class="muted">[02]</span> Architecture      <span class="green">complete</span>
+<span class="muted">[03]</span> Development       <span class="purple">active</span>
+<span class="muted">[04]</span> Testing           <span class="muted">queued</span>
+<span class="muted">[05]</span> Delivery          <span class="muted">queued</span>
 
-status: <em>commissions_open</em>
-specialties:
+<span class="purple">status:</span> commissions_open
+<span class="purple">focus:</span>
   - FiveM / RP
   - Minecraft
   - Gaming communities</code></pre>
       </div>
     </section>
-
-    <section id="services" class="section container">
-      <div class="section-heading">
-        <div class="eyebrow">SERVICES</div>
-        <h2>Built for what your server actually needs.</h2>
-        <p>No generic one-size-fits-all package. Each commission is scoped around your workflow.</p>
-      </div>
-      <div class="cards three">
-        <article class="card">
-          <div class="icon">⌘</div>
-          <h3>Custom Bots</h3>
-          <p>Purpose-built systems, slash commands, buttons, modals, databases, permissions and automation.</p>
-          <strong>From €40</strong>
-        </article>
-        <article class="card">
-          <div class="icon">↻</div>
-          <h3>Bot Modifications</h3>
-          <p>New modules, fixes and improvements for existing projects after an initial code review.</p>
-          <strong>From €10</strong>
-        </article>
-        <article class="card">
-          <div class="icon">◉</div>
-          <h3>Maintenance</h3>
-          <p>Ongoing bug fixes, compatibility updates and agreed minor improvements after delivery.</p>
-          <strong>From €15/month</strong>
-        </article>
+    <section class="stats-strip reveal"><div class="container stats-grid"><div><strong>Custom</strong><span>Every project</span></div><div><strong>3</strong><span>Main specialties</span></div><div><strong>24/7</strong><span>Bot automation</span></div><div><strong>Clean</strong><span>Project structure</span></div></div></section>
+    <section class="section container reveal" id="services">
+      <div class="section-heading"><p class="eyebrow">SERVICES</p><h2>More than a generic public bot.</h2><p>Each commission is scoped around your server, staff structure and workflow.</p></div>
+      <div class="service-grid">
+        <article class="service-card featured"><div class="card-top"><span class="card-icon">⌘</span><span class="tag">Most requested</span></div><h3>Custom Discord Bots</h3><p>Complete systems with slash commands, interactive panels, permissions, databases and custom automation.</p><ul><li>Staff & role management</li><li>Ticket and application systems</li><li>Databases & persistent data</li><li>Custom server workflows</li></ul><div class="price">From <strong>€40</strong></div></article>
+        <article class="service-card"><div class="card-top"><span class="card-icon">↻</span></div><h3>Bot Modifications</h3><p>New features, fixes and improvements for existing bots after a quick code and requirements review.</p><ul><li>New modules</li><li>Bug fixing</li><li>Permission rework</li><li>Code cleanup</li></ul><div class="price">From <strong>€10</strong></div></article>
+        <article class="service-card"><div class="card-top"><span class="card-icon">◉</span></div><h3>Maintenance</h3><p>Ongoing support after delivery for updates, agreed minor changes and compatibility fixes.</p><ul><li>Bug fixes</li><li>Compatibility updates</li><li>Minor improvements</li><li>Priority support</li></ul><div class="price">From <strong>€15/month</strong></div></article>
       </div>
     </section>
-
-    <section id="projects" class="section alt">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">SELECTED DEMOS</div>
-          <h2>Systems designed to show real use cases.</h2>
-        </div>
-        <div class="projects">
-          <article class="project">
-            <div class="project-tag">FiveM / RP</div>
-            <h3>Business Management Bot</h3>
-            <p>Employee sessions, invoices, staff permissions, business statistics and persistent data.</p>
-            <div class="chips"><span>SQLite</span><span>Slash Commands</span><span>Staff Systems</span></div>
-            <a href="https://github.com/kurosdevelopment/fivem-management-bot-demo" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-          <article class="project">
-            <div class="project-tag">Minecraft</div>
-            <h3>Minecraft Community Bot</h3>
-            <p>Applications, server information, support workflows and interactive community panels.</p>
-            <div class="chips"><span>Modals</span><span>Persistent UI</span><span>Automation</span></div>
-            <a href="https://github.com/kurosdevelopment/minecraft-server-bot-demo" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-          <article class="project">
-            <div class="project-tag">Community</div>
-            <h3>Community Management Bot</h3>
-            <p>Welcome flows, suggestions, moderation utilities and server information for general communities.</p>
-            <div class="chips"><span>Moderation</span><span>Suggestions</span><span>Utilities</span></div>
-            <a href="https://github.com/kurosdevelopment/community-bot-demo" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="section container">
-      <div class="section-heading">
-        <div class="eyebrow">PROCESS</div>
-        <h2>From idea to delivery.</h2>
-      </div>
-      <div class="steps">
-        <div><span>01</span><h3>Request</h3><p>Explain your server, goals and required features.</p></div>
-        <div><span>02</span><h3>Quote</h3><p>Scope, price and delivery terms are agreed before work starts.</p></div>
-        <div><span>03</span><h3>Development</h3><p>The system is built with a clean, maintainable project structure.</p></div>
-        <div><span>04</span><h3>Demo & Delivery</h3><p>Test the project, approve it, then receive the agreed delivery.</p></div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container about">
-        <div>
-          <div class="eyebrow">ABOUT</div>
-          <h2>Development focused on gaming communities.</h2>
-        </div>
-        <p>
-          Kuros Development creates custom Discord systems for communities that need more than a basic public bot.
-          Projects can cover moderation, ticketing, staff operations, applications, business management,
-          persistent databases and server-specific workflows.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact" class="section container">
-      <div class="cta">
-        <div>
-          <div class="eyebrow">START A PROJECT</div>
-          <h2>Have a bot idea?</h2>
-          <p>Request a quote and describe what your server needs.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="button" href="https://discord.com/app" target="_blank" rel="noopener">Discord: dszkuro_</a>
-          <a class="button secondary" href="https://github.com/kurosdevelopment" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
+    <section class="section section-dark reveal" id="projects"><div class="container"><div class="section-heading"><p class="eyebrow">PORTFOLIO</p><h2>Built for real community use cases.</h2><p>Public demo projects show the type of systems Kuros Development can build and customize.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-number">01</div><span class="project-type">FiveM / RP</span><h3>Business Management System</h3><p>Employee sessions, invoicing, staff permissions, statistics and persistent business data.</p><div class="chips"><span>Employees</span><span>Invoices</span><span>SQLite</span><span>Permissions</span></div><a href="https://github.com/kurosdevelopment/fivem-management-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+        <article class="project-card"><div class="project-number">02</div><span class="project-type">Minecraft</span><h3>Community Management System</h3><p>Applications, interactive panels, server information and support workflows for Minecraft communities.</p><div class="chips"><span>Applications</span><span>Panels</span><span>Support</span><span>Automation</span></div><a href="https://github.com/kurosdevelopment/minecraft-server-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+        <article class="project-card"><div class="project-number">03</div><span class="project-type">General Community</span><h3>Community Utility Bot</h3><p>Welcome systems, suggestions, moderation utilities and useful server information commands.</p><div class="chips"><span>Moderation</span><span>Welcome</span><span>Suggestions</span><span>Utilities</span></div><a href="https://github.com/kurosdevelopment/community-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+      </div></div></section>
+    <section class="section container reveal" id="process"><div class="section-heading"><p class="eyebrow">PROCESS</p><h2>Simple from request to delivery.</h2></div><div class="process-grid"><article><span>01</span><h3>Request</h3><p>Tell us your server type, goals and required features.</p></article><article><span>02</span><h3>Quote</h3><p>Scope, pricing and delivery terms are agreed before work starts.</p></article><article><span>03</span><h3>Development</h3><p>Your system is built and tested around the approved requirements.</p></article><article><span>04</span><h3>Demo & Delivery</h3><p>You review the project, approve it and receive the agreed delivery.</p></article></div></section>
+    <section class="section section-dark reveal" id="faq"><div class="container faq-layout"><div class="section-heading sticky-heading"><p class="eyebrow">FAQ</p><h2>Before you open a ticket.</h2><p>Quick answers to the questions most clients ask first.</p></div><div class="faq-list">
+      <details open><summary>Do you provide hosting?</summary><p>No. Hosting is normally handled by the client unless a specific arrangement is agreed separately.</p></details>
+      <details><summary>Can you modify an existing bot?</summary><p>Yes. Existing code is reviewed first so the work can be quoted accurately and safely.</p></details>
+      <details><summary>How much does a custom bot cost?</summary><p>Pricing depends on complexity and scope. Small projects can start around €40, while larger systems are quoted individually.</p></details>
+      <details><summary>Do you work only with FiveM and Minecraft?</summary><p>No. Those are the main specialties, but general gaming and community servers are also supported.</p></details>
+      <details><summary>How do I request a quote?</summary><p>Join the Kuros Development Discord server and use the quote ticket system. Include as much detail as possible about the project.</p></details>
+    </div></div></section>
+    <section class="section container reveal" id="contact"><div class="cta-card"><div><p class="eyebrow">START A PROJECT</p><h2>Have an idea for your server?</h2><p>Open a quote ticket and turn it into a system built around your community.</p></div><div class="cta-actions"><a class="button primary" href="https://discord.gg/4mwm48HGT" target="_blank" rel="noopener noreferrer">Join Discord</a><a class="button secondary" href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub Profile</a></div></div></section>
   </main>
-
-  <footer>
-    <div class="container footer">
-      <div>© <span id="year"></span> Kuros Development.</div>
-      <div>Custom Discord development for gaming communities.</div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">K</span><span>Kuros Development</span></a><p>Custom Discord development for gaming communities.</p></div><div class="footer-links"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#faq">FAQ</a><a href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub</a></div><div class="copyright">© <span id="year"></span> Kuros Development</div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
