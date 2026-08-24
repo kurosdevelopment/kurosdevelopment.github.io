@@ -4,41 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Kuros Development builds custom Discord bots and automation for FiveM, Minecraft and gaming communities.">
-  <meta property="og:title" content="Kuros Development — Custom Discord Bots">
-  <meta property="og:description" content="Custom Discord systems built around your community.">
+  <title>Kuros Development — Custom Discord Bots & Hosting</title>
+  <meta name="description" content="Kuros Development builds custom Discord bots, automation, maintenance and optional hosting for FiveM, Minecraft and gaming communities.">
+  <link rel="canonical" href="https://kurosdevelopment.github.io/">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Kuros Development — Custom Discord Bots & Hosting">
+  <meta property="og:description" content="Custom Discord systems built around your community.">
   <meta property="og:url" content="https://kurosdevelopment.github.io/">
-  <title>Kuros Development — Custom Discord Bots</title>
+  <meta property="og:site_name" content="Kuros Development">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--bg:#090b10;--surface:#10131a;--surface2:#141923;--text:#f6f7fb;--muted:#9ca5b5;--line:#232938;--purple:#7c5cff;--purple2:#a18fff;--green:#5ee6a8;--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-3;background-image:linear-gradient(rgba(255,255,255,.017) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.017) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
+    a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}.skip{position:fixed;top:-100px;left:15px;background:#fff;color:#000;padding:9px 13px;border-radius:8px;z-index:999}.skip:focus{top:15px}
+    .ambient{position:fixed;border-radius:999px;filter:blur(125px);opacity:.16;z-index:-2;pointer-events:none}.a1{width:430px;height:430px;background:#7251ff;right:-150px;top:45px}.a2{width:360px;height:360px;background:#5539be;left:-150px;top:740px}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(9,11,16,.76);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.02em}.mark{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,#a18fff,#6245df);box-shadow:0 8px 24px rgba(107,78,255,.26)}
+    .nav-links{display:flex;align-items:center;gap:25px;color:#d6dbe7;font-size:14px}.nav-links>a:not(.nav-cta):hover{color:#fff}.nav-cta{padding:9px 15px;border-radius:9px;background:var(--purple);font-weight:700;box-shadow:0 8px 24px rgba(124,92,255,.18)}.menu{display:none;background:none;border:0;color:#fff;font-size:24px}
+    .hero{min-height:690px;padding:92px 0 78px;display:grid;grid-template-columns:1.08fr .92fr;gap:76px;align-items:center}.pill{display:inline-flex;align-items:center;gap:9px;margin-bottom:25px;padding:7px 11px;border:1px solid #2e3545;border-radius:999px;background:rgba(16,19,26,.8);font-size:12px;color:#c9cfda}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(94,230,168,.09)}.eyebrow{margin:0 0 14px;color:var(--purple2);font-size:12px;font-weight:800;letter-spacing:.18em}h1,h2,h3{line-height:1.08;margin-top:0}h1{margin-bottom:24px;font-size:clamp(49px,6.2vw,78px);letter-spacing:-.058em}h1 span{color:var(--purple2)}h2{margin-bottom:16px;font-size:clamp(34px,4.4vw,50px);letter-spacing:-.045em}h3{font-size:21px}.hero-text{max-width:660px;color:var(--muted);font-size:18px}.hero-actions{display:flex;gap:12px;margin:31px 0 27px}.button{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;border:1px solid transparent;font-weight:750;transition:.2s}.button:hover{transform:translateY(-2px)}.primary{background:var(--purple);box-shadow:0 12px 30px rgba(124,92,255,.23)}.secondary{border-color:#353d4f;background:rgba(16,19,26,.55)}.trust{display:flex;flex-wrap:wrap;gap:18px;color:#afb7c5;font-size:13px}
+    .terminal{overflow:hidden;border:1px solid #293044;border-radius:18px;background:rgba(13,16,22,.94);box-shadow:0 30px 80px rgba(0,0,0,.42)}.terminal-head{height:47px;padding:0 15px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #242b38;color:#778091;font:11px 'JetBrains Mono',monospace}.dots{display:flex;gap:7px}.dots span{width:9px;height:9px;border-radius:50%;background:#444b59}pre{margin:0;padding:29px;overflow:auto;color:#b7c0cf;font:13px/1.85 'JetBrains Mono',monospace}.purple{color:#9e89ff}.green{color:#64dca7}.muted{color:#626c7c}
+    .stats{border-block:1px solid #181d27;background:rgba(11,14,20,.76)}.stats-grid{min-height:105px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center}.stats-grid>div{padding:12px 28px;border-right:1px solid #1f2531}.stats-grid>div:first-child{padding-left:0}.stats-grid>div:last-child{border-right:0}.stats-grid strong{display:block;font-size:23px;letter-spacing:-.04em}.stats-grid span{color:var(--muted);font-size:12px}
+    .section{padding:112px 0}.dark{background:#0c0f15;border-block:1px solid #171c26}.heading{max-width:750px;margin-bottom:47px}.heading>p:last-child{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card,.project,.why-card{position:relative;padding:29px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(180deg,rgba(18,22,30,.93),rgba(13,16,22,.93));transition:.22s}.card:hover,.project:hover,.why-card:hover{transform:translateY(-4px);border-color:#3a4356}.featured{box-shadow:inset 0 2px 0 var(--purple)}.hosting{box-shadow:inset 0 2px 0 rgba(161,143,255,.72)}.card-top{height:34px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between}.icon{color:var(--purple2);font-size:24px}.tag{padding:5px 8px;border:1px solid rgba(124,92,255,.22);border-radius:999px;background:rgba(124,92,255,.13);color:#aa98ff;font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.card p,.project p,.why-card p{color:var(--muted)}.card ul{list-style:none;padding:0;margin:25px 0}.card li{padding:7px 0;border-bottom:1px solid #1e2430;color:#c3cad5;font-size:13px}.card li:before{content:"✓";color:var(--purple2);margin-right:8px}.price{margin-top:26px;color:#8f98a8;font-size:12px}.price strong{color:#fff;font-size:19px;margin-left:4px}.fine{margin:18px 2px 0;color:#747e8d;font-size:12px}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.num{position:absolute;right:23px;top:18px;color:#1e2431;font:700 38px 'JetBrains Mono',monospace}.type{display:inline-block;margin:9px 0 27px;color:#a28fff;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:22px 0 28px}.chips span{padding:5px 8px;border:1px solid #2b3241;border-radius:7px;color:#9ea8b8;font-size:10px}.project>a{color:#b3a5ff;font-size:13px;font-weight:700}
+    .process,.why{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.process article{padding-top:22px;border-top:1px solid #29303f}.process span,.why-no{color:var(--purple2);font:700 12px 'JetBrains Mono',monospace}.process h3{margin:19px 0 10px}.process p{color:var(--muted);font-size:14px}.why-card{padding:26px}.why-card h3{margin:18px 0 10px}.why-card p{margin-bottom:0;font-size:14px}
+    .faq-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:80px}.sticky{position:sticky;top:120px;align-self:start}.faq{border-top:1px solid var(--line)}details{padding:21px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16px;font-weight:700}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--purple2);font-size:22px;font-weight:400}details[open] summary:after{content:"−"}details p{max-width:680px;margin:14px 0 2px;color:var(--muted);font-size:14px}details strong{color:#d8d2ff}
+    .cta{padding:52px;display:flex;align-items:center;justify-content:space-between;gap:35px;border:1px solid #2a3243;border-radius:20px;background:radial-gradient(circle at 80% 0%,rgba(124,92,255,.18),transparent 37%),#10141c}.cta h2{margin-bottom:10px}.cta>div>p:last-child{margin:0;color:var(--muted)}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .footer{padding:42px 0;border-top:1px solid #1d2330}.footer-inner{display:grid;grid-template-columns:1.2fr 1fr auto;gap:40px;align-items:end}.footer p,.copy{color:#7e8797;font-size:12px}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:#a8b0be;font-size:12px}.footer-links a:hover{color:#fff}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}*{transition-duration:.01ms!important}}
+    @media(max-width:980px){.hero{grid-template-columns:1fr;gap:45px}.projects{grid-template-columns:1fr 1fr}.process,.why{grid-template-columns:1fr 1fr}.faq-layout{grid-template-columns:1fr;gap:20px}.sticky{position:static}.stats-grid{grid-template-columns:1fr 1fr}.stats-grid>div{padding:18px 0;border-right:0;border-bottom:1px solid #1f2531}.cta{flex-direction:column;align-items:flex-start}.footer-inner{grid-template-columns:1fr 1fr}.copy{grid-column:1/-1}}
+    @media(max-width:720px){.menu{display:block}.nav-links{display:none;position:absolute;top:76px;left:20px;right:20px;padding:18px;flex-direction:column;align-items:stretch;border:1px solid #2a3140;border-radius:12px;background:#10141b;box-shadow:0 20px 50px rgba(0,0,0,.35)}.nav-links.open{display:flex}.services,.projects,.process,.why,.stats-grid{grid-template-columns:1fr}.hero{padding-top:70px}.hero-actions,.cta-actions{flex-direction:column}.button{width:100%}.trust{flex-direction:column;gap:8px}.section{padding:82px 0}.cta{padding:31px}.footer-inner{grid-template-columns:1fr}.copy{grid-column:auto}h1{font-size:48px}}
+    @media(max-width:460px){.container{width:min(calc(100% - 28px),var(--max))}h1{font-size:42px}pre{padding:22px;font-size:12px}.card,.project{padding:24px}}
+  </style>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+
   <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#top"><span class="brand-mark">K</span><span>Kuros Development</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top"><span class="mark">K</span><span>Kuros Development</span></a>
+      <button class="menu" id="menu" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#faq">FAQ</a>
+        <a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a>
         <a class="nav-cta" href="https://discord.gg/4mJxqJGt48" target="_blank" rel="noopener noreferrer">Get a Quote</a>
       </div>
     </nav>
   </header>
-  <main id="top">
-    <section class="hero container reveal">
-      <div class="hero-copy">
-        <div class="pill"><span class="status-dot"></span> Commissions open</div>
+
+  <main id="main">
+    <section class="hero container reveal" id="top">
+      <div>
+        <div class="pill"><span class="dot"></span> Commissions open</div>
         <p class="eyebrow">CUSTOM DISCORD DEVELOPMENT</p>
         <h1>Systems built around <span>your community.</span></h1>
         <p class="hero-text">Custom Discord bots, automation and server-specific workflows for FiveM, Minecraft and gaming communities — designed around the way your staff and members actually work.</p>
         <div class="hero-actions"><a class="button primary" href="https://discord.gg/4mJxqJGt48" target="_blank" rel="noopener noreferrer">Request a Quote</a><a class="button secondary" href="#projects">View Projects</a></div>
-        <div class="trust-row"><span>✓ Custom-built</span><span>✓ Source delivery available</span><span>✓ Maintenance plans</span></div>
+        <div class="trust"><span>✓ Built around your server</span><span>✓ Clear project terms</span><span>✓ Ongoing support available</span></div>
       </div>
-      <div class="terminal-card">
-        <div class="terminal-head"><div class="terminal-dots"><span></span><span></span><span></span></div><span>kuros@development</span></div>
+      <div class="terminal">
+        <div class="terminal-head"><div class="dots"><span></span><span></span><span></span></div><span>kuros@development</span></div>
         <pre><code><span class="purple">$</span> project init
 
 <span class="muted">[01]</span> Requirements      <span class="green">complete</span>
@@ -54,32 +83,53 @@
   - Gaming communities</code></pre>
       </div>
     </section>
-    <section class="stats-strip reveal"><div class="container stats-grid"><div><strong>Custom</strong><span>Every project</span></div><div><strong>3</strong><span>Main specialties</span></div><div><strong>24/7</strong><span>Bot automation</span></div><div><strong>Clean</strong><span>Project structure</span></div></div></section>
+
+    <section class="stats reveal"><div class="container stats-grid"><div><strong>Custom</strong><span>Built for your server</span></div><div><strong>4</strong><span>Core services</span></div><div><strong>1 Week</strong><span>Hosting trial</span></div><div><strong>Support</strong><span>After delivery</span></div></div></section>
+
     <section class="section container reveal" id="services">
-      <div class="section-heading"><p class="eyebrow">SERVICES</p><h2>More than a generic public bot.</h2><p>Each commission is scoped around your server, staff structure and workflow.</p></div>
-      <div class="service-grid">
-        <article class="service-card featured"><div class="card-top"><span class="card-icon">⌘</span><span class="tag">Most requested</span></div><h3>Custom Discord Bots</h3><p>Complete systems with slash commands, interactive panels, permissions, databases and custom automation.</p><ul><li>Staff & role management</li><li>Ticket and application systems</li><li>Databases & persistent data</li><li>Custom server workflows</li></ul><div class="price">From <strong>€40</strong></div></article>
-        <article class="service-card"><div class="card-top"><span class="card-icon">↻</span></div><h3>Bot Modifications</h3><p>New features, fixes and improvements for existing bots after a quick code and requirements review.</p><ul><li>New modules</li><li>Bug fixing</li><li>Permission rework</li><li>Code cleanup</li></ul><div class="price">From <strong>€10</strong></div></article>
-        <article class="service-card"><div class="card-top"><span class="card-icon">◉</span></div><h3>Maintenance</h3><p>Ongoing support after delivery for updates, agreed minor changes and compatibility fixes.</p><ul><li>Bug fixes</li><li>Compatibility updates</li><li>Minor improvements</li><li>Priority support</li></ul><div class="price">From <strong>€15/month</strong></div></article>
+      <div class="heading"><p class="eyebrow">SERVICES</p><h2>More than a generic public bot.</h2><p>Each commission is scoped around your server, staff structure and workflow. No unnecessary features and no one-size-fits-all package.</p></div>
+      <div class="services">
+        <article class="card featured"><div class="card-top"><span class="icon">⌘</span><span class="tag">Most requested</span></div><h3>Custom Discord Bots</h3><p>Complete systems built specifically around your server and community.</p><ul><li>Staff & role management</li><li>Ticket and application systems</li><li>Databases & persistent data</li><li>Custom server workflows</li></ul><div class="price">From <strong>€40</strong></div></article>
+        <article class="card"><div class="card-top"><span class="icon">↻</span></div><h3>Bot Modifications</h3><p>New features, fixes and improvements for existing bots after a code and requirements review.</p><ul><li>New modules</li><li>Bug fixing</li><li>Permission rework</li><li>Code cleanup</li></ul><div class="price">From <strong>€10</strong></div></article>
+        <article class="card"><div class="card-top"><span class="icon">◉</span></div><h3>Maintenance</h3><p>Ongoing support after delivery for updates, agreed minor changes and compatibility fixes.</p><ul><li>Bug fixes</li><li>Compatibility updates</li><li>Minor improvements</li><li>Priority support</li></ul><div class="price">From <strong>€15/month</strong></div></article>
+        <article class="card hosting"><div class="card-top"><span class="icon">☁</span><span class="tag">1-week free trial</span></div><h3>Bot Hosting</h3><p>Optional hosting for your Discord bot, without needing to manage the technical environment yourself.</p><ul><li>1-week free trial</li><li>Setup assistance</li><li>Always-on bot environment</li><li>Separate from development pricing</li></ul><div class="price"><strong>Try it free for 1 week</strong></div></article>
       </div>
+      <p class="fine">Final pricing depends on project scope and complexity. The free trial applies only to the hosting service.</p>
     </section>
-    <section class="section section-dark reveal" id="projects"><div class="container"><div class="section-heading"><p class="eyebrow">PORTFOLIO</p><h2>Built for real community use cases.</h2><p>Public demo projects show the type of systems Kuros Development can build and customize.</p></div>
-      <div class="project-grid">
-        <article class="project-card"><div class="project-number">01</div><span class="project-type">FiveM / RP</span><h3>Business Management System</h3><p>Employee sessions, invoicing, staff permissions, statistics and persistent business data.</p><div class="chips"><span>Employees</span><span>Invoices</span><span>SQLite</span><span>Permissions</span></div><a href="https://github.com/kurosdevelopment/fivem-management-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
-        <article class="project-card"><div class="project-number">02</div><span class="project-type">Minecraft</span><h3>Community Management System</h3><p>Applications, interactive panels, server information and support workflows for Minecraft communities.</p><div class="chips"><span>Applications</span><span>Panels</span><span>Support</span><span>Automation</span></div><a href="https://github.com/kurosdevelopment/minecraft-server-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
-        <article class="project-card"><div class="project-number">03</div><span class="project-type">General Community</span><h3>Community Utility Bot</h3><p>Welcome systems, suggestions, moderation utilities and useful server information commands.</p><div class="chips"><span>Moderation</span><span>Welcome</span><span>Suggestions</span><span>Utilities</span></div><a href="https://github.com/kurosdevelopment/community-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
-      </div></div></section>
-    <section class="section container reveal" id="process"><div class="section-heading"><p class="eyebrow">PROCESS</p><h2>Simple from request to delivery.</h2></div><div class="process-grid"><article><span>01</span><h3>Request</h3><p>Tell us your server type, goals and required features.</p></article><article><span>02</span><h3>Quote</h3><p>Scope, pricing and delivery terms are agreed before work starts.</p></article><article><span>03</span><h3>Development</h3><p>Your system is built and tested around the approved requirements.</p></article><article><span>04</span><h3>Demo & Delivery</h3><p>You review the project, approve it and receive the agreed delivery.</p></article></div></section>
-    <section class="section section-dark reveal" id="faq"><div class="container faq-layout"><div class="section-heading sticky-heading"><p class="eyebrow">FAQ</p><h2>Before you open a ticket.</h2><p>Quick answers to the questions most clients ask first.</p></div><div class="faq-list">
-      <details open><summary>Do you provide hosting?</summary><p>No. Hosting is normally handled by the client unless a specific arrangement is agreed separately.</p></details>
+
+    <section class="section dark reveal" id="projects"><div class="container"><div class="heading"><p class="eyebrow">PORTFOLIO</p><h2>Built for real community use cases.</h2><p>Public demo projects show the type of systems Kuros Development can build and customize.</p></div>
+      <div class="projects">
+        <article class="project"><div class="num">01</div><span class="type">FiveM / RP</span><h3>Business Management System</h3><p>Employee sessions, invoicing, staff permissions, statistics and persistent business data.</p><div class="chips"><span>Employees</span><span>Invoices</span><span>SQLite</span><span>Permissions</span></div><a href="https://github.com/kurosdevelopment/fivem-management-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+        <article class="project"><div class="num">02</div><span class="type">Minecraft</span><h3>Community Management System</h3><p>Applications, interactive panels, server information and support workflows for Minecraft communities.</p><div class="chips"><span>Applications</span><span>Panels</span><span>Support</span><span>Automation</span></div><a href="https://github.com/kurosdevelopment/minecraft-server-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+        <article class="project"><div class="num">03</div><span class="type">General Community</span><h3>Community Utility Bot</h3><p>Welcome systems, suggestions, moderation utilities and useful server information commands.</p><div class="chips"><span>Moderation</span><span>Welcome</span><span>Suggestions</span><span>Utilities</span></div><a href="https://github.com/kurosdevelopment/community-bot-demo" target="_blank" rel="noopener noreferrer">View repository →</a></article>
+      </div>
+    </div></section>
+
+    <section class="section container reveal" id="process"><div class="heading"><p class="eyebrow">PROCESS</p><h2>Simple from request to delivery.</h2><p>A clear workflow keeps scope, expectations and delivery organized from the start.</p></div><div class="process"><article><span>01</span><h3>Request</h3><p>Tell us your server type, goals and required features.</p></article><article><span>02</span><h3>Quote</h3><p>Scope, pricing and delivery terms are agreed before work starts.</p></article><article><span>03</span><h3>Development</h3><p>Your system is built and tested around the approved requirements.</p></article><article><span>04</span><h3>Demo & Delivery</h3><p>You review the project, approve it and receive the agreed delivery.</p></article></div></section>
+
+    <section class="section dark reveal" id="why"><div class="container"><div class="heading"><p class="eyebrow">WHY KUROS</p><h2>Built around the server, not around a template.</h2><p>The goal is to solve actual workflow problems and keep the final system useful, understandable and ready to grow.</p></div><div class="why"><article class="why-card"><span class="why-no">01</span><h3>Server-first approach</h3><p>Features are designed around how your community actually operates.</p></article><article class="why-card"><span class="why-no">02</span><h3>Clear scope</h3><p>Requirements, pricing and delivery expectations are discussed before development begins.</p></article><article class="why-card"><span class="why-no">03</span><h3>Room to grow</h3><p>Projects can be expanded later with new modules, maintenance and additional workflows.</p></article><article class="why-card"><span class="why-no">04</span><h3>One place for support</h3><p>Quotes, project communication and support are handled through the Kuros Development Discord.</p></article></div></div></section>
+
+    <section class="section container reveal" id="faq"><div class="faq-layout"><div class="heading sticky"><p class="eyebrow">FAQ</p><h2>Before you open a ticket.</h2><p>Quick answers to the questions most clients ask first.</p></div><div class="faq">
+      <details open><summary>Do you provide hosting?</summary><p>Yes. Kuros Development also provides optional bot hosting. The hosting service includes a <strong>1-week free trial</strong>, so you can test it before deciding whether to continue. Hosting is offered separately from bot development.</p></details>
       <details><summary>Can you modify an existing bot?</summary><p>Yes. Existing code is reviewed first so the work can be quoted accurately and safely.</p></details>
-      <details><summary>How much does a custom bot cost?</summary><p>Pricing depends on complexity and scope. Small projects can start around €40, while larger systems are quoted individually.</p></details>
+      <details><summary>How much does a custom bot cost?</summary><p>Pricing depends on complexity and scope. Smaller projects can start around €40, while larger systems are quoted individually.</p></details>
       <details><summary>Do you work only with FiveM and Minecraft?</summary><p>No. Those are the main specialties, but general gaming and community servers are also supported.</p></details>
-      <details><summary>How do I request a quote?</summary><p>Join the Kuros Development Discord server and use the quote ticket system. Include as much detail as possible about the project.</p></details>
+      <details><summary>Is hosting included with a bot?</summary><p>No. Bot development and hosting are separate services. You can purchase a bot without hosting, and the free trial applies only to the hosting service.</p></details>
+      <details><summary>How do I request a quote?</summary><p>Join the Kuros Development Discord server and open a quote ticket. Include your server type, approximate size and the features you need.</p></details>
     </div></div></section>
-    <section class="section container reveal" id="contact"><div class="cta-card"><div><p class="eyebrow">START A PROJECT</p><h2>Have an idea for your server?</h2><p>Open a quote ticket and turn it into a system built around your community.</p></div><div class="cta-actions"><a class="button primary" href="https://discord.gg/4mJxqJGt48" target="_blank" rel="noopener noreferrer">Join Discord</a><a class="button secondary" href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub Profile</a></div></div></section>
+
+    <section class="section container reveal"><div class="cta"><div><p class="eyebrow">START A PROJECT</p><h2>Have an idea for your server?</h2><p>Open a quote ticket and turn it into a system built around your community.</p></div><div class="cta-actions"><a class="button primary" href="https://discord.gg/4mJxqJGt48" target="_blank" rel="noopener noreferrer">Join Discord</a><a class="button secondary" href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub Profile</a></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">K</span><span>Kuros Development</span></a><p>Custom Discord development for gaming communities.</p></div><div class="footer-links"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#faq">FAQ</a><a href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub</a></div><div class="copyright">© <span id="year"></span> Kuros Development</div></div></footer>
-  <script src="script.js"></script>
+
+  <footer class="footer"><div class="container footer-inner"><div><a class="brand" href="#top"><span class="mark">K</span><span>Kuros Development</span></a><p>Custom Discord development for gaming communities.</p></div><div class="footer-links"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="https://discord.gg/4mJxqJGt48" target="_blank" rel="noopener noreferrer">Discord</a><a href="https://github.com/kurosdevelopment" target="_blank" rel="noopener noreferrer">GitHub</a></div><div class="copy">© <span id="year"></span> Kuros Development</div></div></footer>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const menu=document.getElementById('menu'),links=document.getElementById('navLinks');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced){document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'))}else{const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e))}
+  </script>
 </body>
 </html>
